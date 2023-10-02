@@ -12,3 +12,12 @@ function addTask(){
 	}
 	inputBox.value = "";
 }
+inputBox.addEventListener(
+   "keyup",
+   function(event) {
+   	if (event.key == "Enter") {
+   		console.log(this.value)
+   		this.value = ""
+   	}
+   }
+)
